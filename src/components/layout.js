@@ -40,19 +40,15 @@ const Layout = ({ children }) => {
       `}
       render={data => {
         return (
-          <>
-            {state && (
-              <div className="light-theme">
-                <div className="bg-container">
-                  <ImageLightTheme />
-                </div>
-                <Toolbar siteTitle={data.site.siteMetadata.title} />
-                <div>
-                  <main>{children}</main>
-                </div>
-              </div>
-            )}
-          </>
+          <div className="light-theme">
+            <div className="bg-container">
+              <ImageLightTheme />
+            </div>
+            <Toolbar siteTitle={data.site.siteMetadata.title} />
+            <div>
+              {state && <main>{children}</main>}
+            </div>
+          </div>
         )
       }}
     />
