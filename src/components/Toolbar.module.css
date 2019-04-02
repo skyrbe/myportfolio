@@ -1,0 +1,73 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px 20px;
+  position: relative;
+  z-index: 10;
+}
+
+.list {
+  color: #FFF;
+  padding: 0;
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+}
+
+.list li {
+  margin-right: 20px;
+}
+
+.list li:last-child {
+  margin-right: 0;
+}
+
+.leftList li {
+  cursor: pointer;
+}
+
+.logo {
+  font-weight: 800;
+}
+
+.batteryContainer {
+  margin-right: 35px !important;
+}
+
+.batteryOuter {
+  width: 25px;
+  height: 13px;
+  border: 1px solid #FFF;
+  border-radius: 2px;
+  position: relative;
+  padding-right: 1px;
+}
+
+.batteryOuter:after {
+  content: '';
+  width: 2px;
+  height: 5px;
+  right: -4px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  top: 3px;
+  position: absolute;
+  background: #FFF;
+}
+
+.batteryInner {
+  height: 9px;
+  width: 21px;
+  position: absolute;
+  left: 1px;
+  background-color: #FFF;
+  top: 1px;
+}
+
+.chargingIcon:before {
+  font-size: 14px;
+  position: absolute;
+  left: 29px;
+  top: -2px;
+}

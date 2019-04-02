@@ -1,0 +1,15 @@
+.light-theme.preload {
+  background-image: url(../images/bg_small.jpg);
+}
+
+.light-theme.postload {
+  background-image: url(../images/bg.jpg);
+}
+
+.dark-theme.preload {
+  background-image: url(../images/bg_dark_small.jpg);
+}
+
+.dark-theme.postload {
+  background-image: url(../images/bg_dark.jpg);
+}
