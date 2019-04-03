@@ -14,10 +14,6 @@ const MeMobile = () => (
             <h3>
               UX Geek | Front End Architect
             </h3>
-            <h6>
-              With 8+ years of experience under my belt, I strive to
-              create pixel perfect and beauitful User Experiences and Optimized Code
-            </h6>
           </div>
         </div>
         <div className="container-fluid p-0 mt-4">

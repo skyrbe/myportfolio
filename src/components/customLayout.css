@@ -513,6 +513,10 @@ body {
     padding: 20px 10px;
   }
 
+  .bg-container {
+    position: fixed;
+  }
+
   .main-section-card .section-body {
     padding: 30px 20px;
     display: -webkit-flex;
@@ -533,8 +537,8 @@ body {
   .main-section-card .profile-pic-container {
     position: relative;
     overflow: hidden;
-    height: 110px;
-    width: 110px;
+    height: 80px;
+    width: 80px;
     border-radius: 50%;
     display: block;
     margin: auto;
@@ -546,7 +550,7 @@ body {
   }
 
   .main-section-card .section-body h3 {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   .main-section-card .section-body h6 {
@@ -557,9 +561,9 @@ body {
   }
 
   .mobicon {
-    width: 70px;
-    height:70px;
-    border-radius: 20px;
+    width: 50px;
+    height:50px;
+    border-radius: 15px;
     box-shadow: 0 0 10px rgba(0,0,0,0.25);
   }
 
@@ -614,5 +618,6 @@ body {
   .mobicon-title {
     color: #FFF;
     text-shadow: 0 0 5px rgba(0,0,0,0.5);
+    font-size: 14px;
   }
 }
