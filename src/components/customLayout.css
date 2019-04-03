@@ -536,20 +536,20 @@ body {
   .main-section-card .profile-pic-container {
     position: relative;
     overflow: hidden;
-    height: 80px;
-    width: 80px;
-    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    border-radius: 35px;
     display: block;
     margin: auto;
     justify-content: center;
   }
 
   .main-section-card .section-body h1 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
 
   .main-section-card .section-body h3 {
-    font-size: 1.1rem;
+    font-size: 1rem;
     margin: 0;
   }
 
