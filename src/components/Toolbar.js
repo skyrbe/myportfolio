@@ -8,7 +8,7 @@ import Charge from './Charge';
 
 const Toolbar = ({ siteTitle }) => {
   return (
-    <header className={styles.header}>
+    <header className={cn('d-none d-md-flex', styles.header)}>
       <ul className={cn(styles.list, styles.leftList)}>
         <li className={styles.logo}>HV</li>
         <li id="full-screen-js" className="d-none d-md-block">Full Screen</li>
