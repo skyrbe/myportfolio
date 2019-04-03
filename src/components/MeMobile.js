@@ -9,11 +9,13 @@ const MeMobile = () => (
       <section className="main-section-card active">
         <div className="section-card">
           <div className="section-body">
-            <div className="mb-4"><ProfilePic /></div>
-            <h1>Harsha Venkatram</h1>
-            <h3>
-              UX Geek | Front End Architect
-            </h3>
+            <div className="mb-3"><ProfilePic /></div>
+            <div>
+              <h1 className="mb-2">Harsha Venkatram</h1>
+              <h3>
+                UX Geek | Front End Architect
+              </h3>
+            </div>
           </div>
         </div>
         <div className="container-fluid p-0 mt-4">

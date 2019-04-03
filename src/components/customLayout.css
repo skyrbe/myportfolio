@@ -518,7 +518,7 @@ body {
   }
 
   .main-section-card .section-body {
-    padding: 30px 20px;
+    padding: 20px;
     display: -webkit-flex;
     display: flex;
     -webkit-flex-direction: column;
@@ -530,7 +530,6 @@ body {
     color: #444;
     background: #FFF;
     border-radius: 10px;
-    padding-bottom: 15px;
     box-shadow: 0 0 160px rgba(0,0,0,0.5)
   }
 
@@ -550,7 +549,8 @@ body {
   }
 
   .main-section-card .section-body h3 {
-    font-size: 1rem;
+    font-size: 1.1rem;
+    margin: 0;
   }
 
   .main-section-card .section-body h6 {
