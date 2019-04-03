@@ -71,3 +71,31 @@
   left: 29px;
   top: -2px;
 }
+
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 2px 10px;
+    font-size: 14px;
+  }
+  .batteryContainer {
+    margin-right: 15px !important;
+  }
+  .batteryOuter {
+    width: 21px;
+    height: 10px;
+  }
+
+  .batteryOuter:after {
+    height: 4px;
+    top: 2px;
+  }
+
+  .batteryInner {
+    height: 6px;
+  }
+
+  .chargingIcon:before {
+    font-size: 10px;
+    left: 25px;
+  }
+}

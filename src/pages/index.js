@@ -9,7 +9,9 @@ import Me from '../components/me';
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <Finder sideMenu = {<Sidebar to="me"/>} mainContent = {<Me />}/>
+    <div className="d-none d-md-block">
+      <Finder sideMenu = {<Sidebar to="me"/>} mainContent = {<Me />}/>
+    </div>
   </Layout>
 )
 

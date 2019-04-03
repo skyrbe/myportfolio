@@ -30,11 +30,9 @@ const Clock = () => {
     }
   }
   return (
-    <li>
-      <span>
-        {`${hour}:${minute} ${timeZone}`}
-      </span>
-    </li>
+    <span>
+      {`${hour}:${minute} ${timeZone}`}
+    </span>
   )
 }
 

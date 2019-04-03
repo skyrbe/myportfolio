@@ -11,13 +11,19 @@ const Toolbar = ({ siteTitle }) => {
     <header className={styles.header}>
       <ul className={cn(styles.list, styles.leftList)}>
         <li className={styles.logo}>HV</li>
-        <li id="full-screen-js">Full Screen</li>
-        <li id="theme-switcher-js">Dark Theme</li>
+        <li id="full-screen-js" className="d-none d-md-block">Full Screen</li>
+        <li id="theme-switcher-js" className="d-none d-md-block">Dark Theme</li>
       </ul>
-
+      <ul className={cn('d-block d-md-none', styles.list, styles.rightList)}>
+        <li>
+          <Clock />
+        </li>
+      </ul>
       <ul className={cn(styles.list, styles.rightList)}>
         <Charge />
-        <Clock />
+        <li className="d-none d-md-block">
+          <Clock />
+        </li>
       </ul>
     </header>
   )

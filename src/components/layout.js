@@ -13,6 +13,7 @@ import { StaticQuery, graphql } from "gatsby"
 import Header from "./header"
 import Toolbar from "./Toolbar";
 import ImageLightTheme from "./preloadImageFull";
+import ImageLightThemeMobile from "./preloadImageFullMobile";
 import "../assets/fonts/CircularStd/style.css";
 import "../assets/global.css";
 import "./bootstrap.css";
@@ -41,8 +42,11 @@ const Layout = ({ children }) => {
       render={data => {
         return (
           <div className="light-theme">
-            <div className="bg-container">
+            <div className="bg-container d-none d-md-block">
               <ImageLightTheme />
+            </div>
+            <div className="bg-container d-block d-md-none">
+              <ImageLightThemeMobile />
             </div>
             <Toolbar siteTitle={data.site.siteMetadata.title} />
             <div>

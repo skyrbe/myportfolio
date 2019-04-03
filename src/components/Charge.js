@@ -11,7 +11,7 @@ const Charge = () => {
     <li className={cn('d-flex align-items-center', styles.batteryContainer)}>
       {battery && battery.level && (
         <>
-          <span className="mr-2" id="battery-level-js">
+          <span className="d-none d-md-block mr-2" id="battery-level-js">
             {`${window.parseInt(battery.level * 100)}%`}
           </span>
           <div className={styles.batteryOuter}>

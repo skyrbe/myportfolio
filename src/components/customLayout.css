@@ -67,6 +67,10 @@ body {
   height: 250px;
 }
 
+.gallery-item-wrapper:hover {
+  cursor: pointer;
+}
+
 .gallery-item-wrapper:nth-child(odd) {
   float: left;
 }
@@ -140,10 +144,20 @@ body {
   transition: color ease-in 0.2s;
 }
 
-.gallery-item:hover .details{
-  height: 100%;
-  transform: translateY(0);
-  transition: transform ease 0.2s;
+.gallery-item-wrapper .details:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background: #00b5ff;
+  transition: width ease 0.2s;
+}
+
+.gallery-item-wrapper:hover .details:after{
+  width: 100%;
+  transition: width ease 0.2s;
 }
 
 .design-details-wrapper {
