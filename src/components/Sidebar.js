@@ -20,7 +20,7 @@ const Sidebar = (props) => {
         <h3 className="menu-title">Others</h3>
         <ul className="menu-list">
           <li><a className="menu-item" data-href="links">Useful Links</a></li>
-          <li><a className="menu-item" data-href="artwork">Artwork</a></li>
+          <li><Link className={cn("menu-item", props.to === 'artwork' ? 'active' : '')} to="/artwork">Artwork</Link></li>
           <li><Link className={cn("menu-item", props.to === 'photography' ? 'active' : '')} to="/photography">Photography</Link></li>
         </ul>
       </div>
