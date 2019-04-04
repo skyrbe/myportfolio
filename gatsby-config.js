@@ -3,9 +3,11 @@ module.exports = {
     title: `Harsha Venkatram`,
     description: `This is the personal portfolio of Harsha Venkatram - UX Geek | Front End Guy | Photographer | Artist.`,
     author: `Harsha Venkatram`,
+    siteUrl: `https://harsha.pro`
   },
   plugins: [
     `gatsby-transformer-remark`,
+    `gatsby-plugin-sitemap`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
