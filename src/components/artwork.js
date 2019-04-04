@@ -25,7 +25,8 @@ const Artwork = (props) => {
     <>
       <SEO title="Artwork" keywords={[`gatsby`, `application`, `react`]} />
       <section id="designs" className="main-section">
-        <h1 className="mb-5">
+        <h1 className="mb-5 d-flex align-items-center">
+          <Link to="/"><i className="icon-back d-block d-md-none mr-2 fs-16" /></Link>
           Artwork
         </h1>
         <div className="details">

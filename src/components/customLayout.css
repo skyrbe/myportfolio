@@ -348,6 +348,10 @@ body {
   font-size: 14px;
 }
 
+.fs-16 {
+  font-size: 1rem;
+}
+
 .photo-item {
   overflow: hidden;
   border-radius: 10px;

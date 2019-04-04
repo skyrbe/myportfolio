@@ -131,3 +131,53 @@
   position: relative;
   width: 100% !important;
 }
+
+@media screen and (max-width: 768px) {
+  .finder-container {
+    height: 100vh;
+    padding-top: 0;
+  }
+
+  .finder-wrapper {
+    top: 0;
+  }
+
+  .finder {
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0;
+  }
+
+  .finder .left-col {
+    display: none;
+  }
+
+  .finder .main-section {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .finder .main-section h1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 4;
+    background: #FFF;
+    margin: 0 !important;
+    padding: 20px 10px !important;
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+
+  .finder .main-section h1+.details {
+    padding-top: 60px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .gallery-item-wrapper {
+    width: 100%;
+  }
+}
