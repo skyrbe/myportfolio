@@ -180,4 +180,18 @@
   .gallery-item-wrapper {
     width: 100%;
   }
+
+  .social-container {
+    padding-top: 80px;
+  }
+
+  .social-container .social-row {
+    padding: 0 10px;
+    flex-direction: column;
+  }
+
+  .social-container .social-row .social-item {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 }

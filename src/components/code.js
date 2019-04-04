@@ -6,8 +6,9 @@ import SEO from "../components/seo"
 const Code = () => (
   <>
     <section id="code" className="main-section">
-      <h1 className="mb-5">
-        Open Source
+      <h1 className="mb-5 d-flex align-items-center">
+        <Link to="/"><i className="icon-back d-block d-md-none mr-2 fs-16" /></Link>
+        Code
       </h1>
       <div className="social-container">
         <div className="social-row">
