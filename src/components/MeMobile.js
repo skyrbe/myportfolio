@@ -19,8 +19,8 @@ const MeMobile = () => (
           </div>
         </div>
         <div className="container-fluid p-0 mt-4">
-          <div className="row">
-            <div className="col-4 d-flex flex-column align-items-center">
+          <div className="row m-0">
+            <div className="col-4 d-flex flex-column align-items-center pl-0">
               <Link to="/designs" className="d-flex flex-column align-items-center">
                 <div className="mobicon mobicon-designs"></div>
                 <span className="mobicon-title">Designs</span>
@@ -32,14 +32,14 @@ const MeMobile = () => (
                 <span className="mobicon-title">Code</span>
               </Link>
             </div>
-            <div className="col-4 d-flex flex-column align-items-center">
+            <div className="col-4 d-flex flex-column align-items-center pr-0">
               <div className="mobicon mobicon-experience"></div>
               <span className="mobicon-title">Experience</span>
             </div>
           </div>
 
-          <div className="row mt-4">
-            <div className="col-4 d-flex flex-column align-items-center">
+          <div className="row mx-0 mt-4">
+            <div className="col-4 d-flex flex-column align-items-center pl-0">
               <div className="mobicon mobicon-links"></div>
               <span className="mobicon-title">Links</span>
             </div>
@@ -49,7 +49,7 @@ const MeMobile = () => (
                 <span className="mobicon-title">Artwork</span>
               </Link>
             </div>
-            <div className="col-4 d-flex flex-column align-items-center">
+            <div className="col-4 d-flex flex-column align-items-center pr-0">
               <Link to="/photography" className="d-flex flex-column align-items-center">
                 <div className="mobicon mobicon-photography"></div>
                 <span className="mobicon-title">Photography</span>
