@@ -12,6 +12,7 @@ import { StaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 import Toolbar from "./Toolbar";
+import Footer from './Footer';
 import ImageLightTheme from "./preloadImageFull";
 import ImageLightThemeMobile from "./preloadImageFullMobile";
 import "../assets/fonts/CircularStd/style.css";
@@ -52,6 +53,7 @@ const Layout = ({ children }) => {
             <div>
               {state && <main>{children}</main>}
             </div>
+            <Footer />
           </div>
         )
       }}
