@@ -46,9 +46,11 @@ const MeMobile = () => (
 
           <div className="row mx-0 mt-4">
             <div className="col-4 d-flex flex-column align-items-center pl-0">
-              <div className="mobicon mobicon-links">
-                <i className="icon-links" />
-              </div>
+              <Link to="/social" className="d-flex flex-column align-items-center">
+                <div className="mobicon mobicon-links">
+                  <i className="icon-links" />
+                </div>
+              </Link>
               <span className="mobicon-title">Links</span>
             </div>
             <div className="col-4 d-flex flex-column align-items-center">
