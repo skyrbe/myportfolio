@@ -569,6 +569,9 @@ body {
     height:50px;
     border-radius: 15px;
     box-shadow: 0 0 10px rgba(0,0,0,0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .mobicon-designs {
@@ -579,12 +582,22 @@ body {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9cb3ff', endColorstr='#b0ffe9',GradientType=1 );
   }
 
+  .mobicon-designs i {
+    color: #4C82DE;
+    font-size: 1.8rem;
+  }
+
   .mobicon-code {
     background: rgb(231,209,255); /* Old browsers */
     background: -moz-linear-gradient(-45deg, rgba(231,209,255,1) 0%, rgba(131,131,239,1) 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(-45deg, rgba(231,209,255,1) 0%,rgba(131,131,239,1) 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(135deg, rgba(231,209,255,1) 0%,rgba(131,131,239,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e7d1ff', endColorstr='#8383ef',GradientType=1 );
+  }
+
+  .mobicon-code i {
+    color: #7567DB;
+    font-size: 1.4rem;
   }
 
   .mobicon-experience {
@@ -595,12 +608,22 @@ body {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff8989', endColorstr='#ffddc5',GradientType=1 );
   }
 
+  .mobicon-experience i {
+    color: #E86A63;
+    font-size: 1.8rem;
+  }
+
   .mobicon-links {
     background: rgb(255,168,232); /* Old browsers */
     background: -moz-linear-gradient(-45deg, rgba(255,168,232,1) 0%, rgba(255,230,230,1) 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(-45deg, rgba(255,168,232,1) 0%,rgba(255,230,230,1) 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(135deg, rgba(255,168,232,1) 0%,rgba(255,230,230,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffa8e8', endColorstr='#ffe6e6',GradientType=1 );
+  }
+
+  .mobicon-links i {
+    color: #E778C1;
+    font-size: 1.7rem;
   }
 
   .mobicon-artwork {
@@ -611,12 +634,22 @@ body {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffaf73', endColorstr='#fffecc',GradientType=1 );
   }
 
+  .mobicon-artwork i {
+    color: #FF9147;
+    font-size: 1.7rem;
+  }
+
   .mobicon-photography {
     background: rgb(89,219,176); /* Old browsers */
     background: -moz-linear-gradient(-45deg, rgba(89,219,176,1) 0%, rgba(254,255,181,1) 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(-45deg, rgba(89,219,176,1) 0%,rgba(254,255,181,1) 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(135deg, rgba(89,219,176,1) 0%,rgba(254,255,181,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#59dbb0', endColorstr='#feffb5',GradientType=1 );
+  }
+
+  .mobicon-photography i {
+    color: #47BF82;
+    font-size: 1.4rem;
   }
 
   .mobicon-title {
