@@ -31,7 +31,7 @@ export const query = graphql`
             cover_image {
               publicURL
               childImageSharp {
-                fluid(maxWidth: 200) {
+                fluid(maxWidth: 100) {
                   ...GatsbyImageSharpFluid
                 }
               }
