@@ -509,6 +509,23 @@ body {
   background: rgba(255,255,255,0.1);
   transition: color ease-in 0.2s;
 }
+
+.social-row {
+  display: block;
+  float: left;
+}
+
+.social-item {
+  margin-bottom: 30px;
+}
+
+.social-item:nth-child(odd) {
+  float: left;
+}
+
+.social-item:nth-child(even) {
+  float: right;
+}
 /* dark-theme ends */
 
 @media screen and (max-width: 768px) {
@@ -656,5 +673,9 @@ body {
     color: #FFF;
     text-shadow: 0 0 5px rgba(0,0,0,0.5);
     font-size: 14px;
+  }
+
+  .social-row {
+    display: flex;
   }
 }

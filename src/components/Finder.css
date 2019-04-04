@@ -188,6 +188,7 @@
   .social-container .social-row {
     padding: 0 10px;
     flex-direction: column;
+    width: 100%;
   }
 
   .social-container .social-row .social-item {
