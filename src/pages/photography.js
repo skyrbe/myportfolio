@@ -9,10 +9,10 @@ import Photography from '../components/photography';
 const IndexPage = (props) => {
   // console.log('props ', props);
   return (
-    <Layout>
+    <>
       <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
       <Finder sideMenu = {<Sidebar to="photography"/>} mainContent = {<Photography list={props.data.allMarkdownRemark.edges} />}/>
-    </Layout>
+    </>
   )
 }
 

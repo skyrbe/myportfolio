@@ -10,12 +10,10 @@ import Designs from '../components/designs';
 const IndexPage = (props) => {
   // console.log('props ', props);
   return (
-    <Layout>
-      <PageTransition>
-        <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-        <Finder sideMenu = {<Sidebar to="designs"/>} mainContent = {<Designs list={props.data.allMarkdownRemark.edges} />}/>
-      </PageTransition>
-    </Layout>
+    <>
+      <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+      <Finder sideMenu = {<Sidebar to="designs"/>} mainContent = {<Designs list={props.data.allMarkdownRemark.edges} />}/>
+    </>
   )
 }
 

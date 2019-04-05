@@ -14,6 +14,7 @@ import Toolbar from "../components/Toolbar";
 import Footer from '../components/Footer';
 import ImageLightTheme from "../components/preloadImageFull";
 import ImageLightThemeMobile from "../components/preloadImageFullMobile";
+import Transition from '../components/transition';
 import "../assets/fonts/CircularStd/style.css";
 import "../assets/global.css";
 import "../components/bootstrap.css";
@@ -51,7 +52,7 @@ const Layout = ({ children, location }) => {
             <Toolbar siteTitle={data.site.siteMetadata.title} />
             <div>
               <main>
-                {children}
+                <Transition location={location}>{children}</Transition>
               </main>
             </div>
             <Footer />

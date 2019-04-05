@@ -91,10 +91,10 @@ const IndexPage = (props) => {
     }
   ]
   return (
-    <Layout>
+    <>
       <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
       <Finder sideMenu = {<Sidebar to="social"/>} mainContent = {<Social list={data} />}/>
-    </Layout>
+    </>
   )
 }
 
