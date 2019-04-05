@@ -9,15 +9,15 @@ import React, {useEffect, useState} from "react"
 import cn from 'classnames';
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
-import Header from "./header"
-import Toolbar from "./Toolbar";
-import Footer from './Footer';
-import ImageLightTheme from "./preloadImageFull";
-import ImageLightThemeMobile from "./preloadImageFullMobile";
+import Header from "../components/header"
+import Toolbar from "../components/Toolbar";
+import Footer from '../components/Footer';
+import ImageLightTheme from "../components/preloadImageFull";
+import ImageLightThemeMobile from "../components/preloadImageFullMobile";
 import "../assets/fonts/CircularStd/style.css";
 import "../assets/global.css";
-import "./bootstrap.css";
-import "./customLayout.css";
+import "../components/bootstrap.css";
+import "../components/customLayout.css";
 import '../assets/fonts/icomoon/style.css';
 
 const Layout = ({ children, location }) => {

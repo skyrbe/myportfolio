@@ -1,7 +1,7 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 import PageTransition from 'gatsby-plugin-page-transitions';
-import Layout from "../components/layout"
+import Layout from "../layouts"
 import Image from "../components/image"
 import SEO from "../components/seo"
 import Finder from "../components/Finder";
