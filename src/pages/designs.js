@@ -1,5 +1,6 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
+import PageTransition from 'gatsby-plugin-page-transitions';
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
@@ -10,8 +11,10 @@ const IndexPage = (props) => {
   // console.log('props ', props);
   return (
     <Layout>
-      <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-      <Finder sideMenu = {<Sidebar to="designs"/>} mainContent = {<Designs list={props.data.allMarkdownRemark.edges} />}/>
+      <PageTransition>
+        <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+        <Finder sideMenu = {<Sidebar to="designs"/>} mainContent = {<Designs list={props.data.allMarkdownRemark.edges} />}/>
+      </PageTransition>
     </Layout>
   )
 }

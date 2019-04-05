@@ -9,7 +9,6 @@ import React, {useEffect, useState} from "react"
 import cn from 'classnames';
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
-
 import Header from "./header"
 import Toolbar from "./Toolbar";
 import Footer from './Footer';
@@ -21,14 +20,14 @@ import "./bootstrap.css";
 import "./customLayout.css";
 import '../assets/fonts/icomoon/style.css';
 
-const Layout = ({ children }) => {
-  const [state, setState] = useState(false);
-  useEffect(() => {
-    // Update the document title using the browser API
-    window.setTimeout(() => {
-      setState(true);
-    }, 100);
-  });
+const Layout = ({ children, location }) => {
+  // const [state, setState] = useState(false);
+  // useEffect(() => {
+  //   // Update the document title using the browser API
+  //   window.setTimeout(() => {
+  //     setState(true);
+  //   }, 100);
+  // });
   return (
     <StaticQuery
       query={graphql`
@@ -51,7 +50,9 @@ const Layout = ({ children }) => {
             </div>
             <Toolbar siteTitle={data.site.siteMetadata.title} />
             <div>
-              {state && <main>{children}</main>}
+              <main>
+                {children}
+              </main>
             </div>
             <Footer />
           </div>

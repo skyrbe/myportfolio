@@ -2,6 +2,7 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import Img from "gatsby-image";
 import Layout from "../components/layout"
+import AniLink from 'gatsby-plugin-transition-link/AniLink';
 import SEO from "../components/seo"
 import DesignImage from './designImage';
 
@@ -26,7 +27,7 @@ const Artwork = (props) => {
       <SEO title="Artwork" keywords={[`gatsby`, `application`, `react`]} />
       <section id="designs" className="main-section">
         <h1 className="mb-5 d-flex align-items-center">
-          <Link to="/"><i className="icon-back d-block d-md-none mr-2 fs-16" /></Link>
+          <AniLink swipe duration={0.25} direction="right" rel="canonical" to="/" className="icon-back d-block d-md-none mr-2 fs-16" />
           Artwork
         </h1>
         <div className="details">

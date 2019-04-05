@@ -371,6 +371,10 @@ body {
 
 /*Theme begins */
 /* light-theme */
+.light-theme {
+  height: 100vh;
+}
+
 .light-theme.preload {
   background-image: url(/assets/images/bg_small.jpg);
 }

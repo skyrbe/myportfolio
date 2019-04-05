@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
+import AniLink from 'gatsby-plugin-transition-link/AniLink';
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
@@ -7,7 +8,7 @@ const Code = () => (
   <>
     <section id="code" className="main-section">
       <h1 className="mb-5 d-flex align-items-center">
-        <Link to="/"><i className="icon-back d-block d-md-none mr-2 fs-16" /></Link>
+        <AniLink swipe duration={0.25} direction="right" rel="canonical" to="/" className="icon-back d-block d-md-none mr-2 fs-16" />
         Code
       </h1>
       <div className="social-container">
