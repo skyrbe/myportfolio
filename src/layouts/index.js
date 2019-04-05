@@ -22,13 +22,13 @@ import "../components/customLayout.css";
 import '../assets/fonts/icomoon/style.css';
 
 const Layout = ({ children, location }) => {
-  // const [state, setState] = useState(false);
-  // useEffect(() => {
-  //   // Update the document title using the browser API
-  //   window.setTimeout(() => {
-  //     setState(true);
-  //   }, 100);
-  // });
+  const [state, setState] = useState(false);
+  useEffect(() => {
+    // Update the document title using the browser API
+    window.setTimeout(() => {
+      setState(true);
+    }, 100);
+  });
   return (
     <StaticQuery
       query={graphql`
@@ -43,19 +43,23 @@ const Layout = ({ children, location }) => {
       render={data => {
         return (
           <div className="light-theme">
-            <div className="bg-container d-none d-md-block">
-              <ImageLightTheme />
-            </div>
-            <div className="bg-container d-block d-md-none">
-              <ImageLightThemeMobile />
-            </div>
-            <Toolbar siteTitle={data.site.siteMetadata.title} />
-            <div>
-              <main>
-                <Transition location={location}>{children}</Transition>
-              </main>
-            </div>
-            <Footer />
+            {state && (
+              <>
+                <div className="bg-container d-none d-md-block">
+                  <ImageLightTheme />
+                </div>
+                <div className="bg-container d-block d-md-none">
+                  <ImageLightThemeMobile />
+                </div>
+                <Toolbar siteTitle={data.site.siteMetadata.title} />
+                <div>
+                  <main>
+                    <Transition location={location}>{children}</Transition>
+                  </main>
+                </div>
+                <Footer />
+              </>
+            )}
           </div>
         )
       }}
