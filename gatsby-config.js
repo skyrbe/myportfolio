@@ -11,8 +11,8 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
-        host: 'https://harsha.pro',
-        sitemap: 'https://harsha.pro/sitemap.xml',
+        host: 'https://www.harsha.pro',
+        sitemap: 'https://www.harsha.pro/sitemap.xml',
         policy: [{ userAgent: '*', allow: '/' }]
       }
     },
