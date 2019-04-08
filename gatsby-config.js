@@ -3,7 +3,7 @@ module.exports = {
     title: `Harsha Venkatram`,
     description: `This is the personal portfolio of Harsha Venkatram - UX Geek | Front End Guy | Photographer | Artist.`,
     author: `Harsha Venkatram`,
-    siteUrl: `https://harsha.pro`
+    siteUrl: `https://www.harsha.pro`
   },
   plugins: [
     `gatsby-transformer-remark`,
