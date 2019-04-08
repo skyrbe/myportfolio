@@ -9,7 +9,6 @@ import MeMobile from "../components/MeMobile";
 import Me from '../components/me';
 const IndexPage = () => (
   <>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
     <div className="d-block d-md-none">
       <MeMobile />
     </div>
