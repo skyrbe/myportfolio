@@ -20,6 +20,7 @@ import "../assets/global.css";
 import "../components/bootstrap.css";
 import "../components/customLayout.css";
 import '../assets/fonts/icomoon/style.css';
+import SEO from '../components/seo';
 
 const Layout = ({ children, location }) => {
   const [state, setState] = useState(false);
@@ -42,25 +43,28 @@ const Layout = ({ children, location }) => {
       `}
       render={data => {
         return (
-          <div className="light-theme">
-            {state && (
-              <>
-                <div className="bg-container d-none d-md-block">
-                  <ImageLightTheme />
-                </div>
-                <div className="bg-container d-block d-md-none">
-                  <ImageLightThemeMobile />
-                </div>
-                <Toolbar siteTitle={data.site.siteMetadata.title} />
-                <div>
-                  <main>
-                    <Transition location={location}>{children}</Transition>
-                  </main>
-                </div>
-                <Footer />
-              </>
-            )}
-          </div>
+          <>
+            <SEO />
+            <div className="light-theme">
+              {state && (
+                <>
+                  <div className="bg-container d-none d-md-block">
+                    <ImageLightTheme />
+                  </div>
+                  <div className="bg-container d-block d-md-none">
+                    <ImageLightThemeMobile />
+                  </div>
+                  <Toolbar siteTitle={data.site.siteMetadata.title} />
+                  <div>
+                    <main>
+                      <Transition location={location}>{children}</Transition>
+                    </main>
+                  </div>
+                  <Footer />
+                </>
+              )}
+            </div>
+          </>
         )
       }}
     />
