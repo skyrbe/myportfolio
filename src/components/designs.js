@@ -16,7 +16,7 @@ const ListItem = ({ item }) => {
           <img src={item.frontmatter.cover_image.publicURL} />
         )}
       </div>
-      <span className="details">{item.frontmatter.title}</span>
+      <h3 className="details">{item.frontmatter.title}</h3>
     </div>
   );
 }
