@@ -42,9 +42,17 @@ const Layout = ({ children, location }) => {
         }
       `}
       render={data => {
+        let description = '';
+        switch (location.pathname) {
+          case '/designs/':
+            description="This page lists some of the designs that I have worked on over the past 8+ years. I have worked on Android, IOS, Webapp designs. Photoshop and Sketch are the tools of my choice."
+            break;
+          default:
+
+        }
         return (
           <>
-            <SEO />
+            <SEO description={description}/>
             <div className="light-theme">
               {state && (
                 <>
