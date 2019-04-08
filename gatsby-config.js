@@ -44,6 +44,10 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `harsha-venkatram`,
+        description: `Hey There! Harsha Venkatram is a UX Geek with the heart of an artist. He also happens to be a front end architect, amateur photographer and artist. You will find most his designs and Open Source contribution here. Have fun!`,
+        author: `Harsha Venkatram`,
+        siteUrl: `https://www.harsha.pro`,
+        logo: `https://www.harsha.pro/logo.jpg`,
         short_name: `HV`,
         start_url: `/`,
         background_color: `#663399`,
