@@ -6,6 +6,6 @@ YARNVERSION = "1.9.4"
 YARNFLAGS = "--no-ignore-optional"
 [[redirects]]
 from = "https://harsha-venkatram.netlify.com/*"
-to = "https://harsha.pro/:splat"
+to = "https://www.harsha.pro/:splat"
 status = 301
 force = true
