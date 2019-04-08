@@ -1,0 +1,11 @@
+[build]
+publish = "public"
+command = "npm run build"
+[build.environment]
+YARNVERSION = "1.9.4"
+YARNFLAGS = "--no-ignore-optional"
+[[redirects]]
+from = "https://harsha-venkatram.netlify.com/*"
+to = "https://harsha.pro/:splat"
+status = 301
+force = true

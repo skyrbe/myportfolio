@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://harsha.pro/sitemap.xml
+Host: https://harsha.pro
