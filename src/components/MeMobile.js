@@ -22,7 +22,7 @@ const MeMobile = () => (
         <div className="container-fluid p-0 mt-4">
           <div className="row m-0">
             <div className="col-4 d-flex flex-column align-items-center pl-0">
-              <Link swipe duration={0.25} direction="left" rel="canonical" to="/designs" className="d-flex flex-column align-items-center">
+              <Link swipe duration={0.25} direction="left" rel="canonical" to="/designs/" className="d-flex flex-column align-items-center">
                 <div className="mobicon mobicon-designs">
                   <i className="icon-design" />
                 </div>
@@ -30,7 +30,7 @@ const MeMobile = () => (
               </Link>
             </div>
             <div className="col-4 d-flex flex-column align-items-center">
-              <Link swipe duration={0.25} direction="left" rel="canonical" to="/code" className="d-flex flex-column align-items-center">
+              <Link swipe duration={0.25} direction="left" rel="canonical" to="/code/" className="d-flex flex-column align-items-center">
                 <div className="mobicon mobicon-code">
                   <i className="icon-code" />
                 </div>
@@ -47,7 +47,7 @@ const MeMobile = () => (
 
           <div className="row mx-0 mt-4">
             <div className="col-4 d-flex flex-column align-items-center pl-0">
-              <Link swipe duration={0.25} direction="left" rel="canonical" to="/social" className="d-flex flex-column align-items-center">
+              <Link swipe duration={0.25} direction="left" rel="canonical" to="/social/" className="d-flex flex-column align-items-center">
                 <div className="mobicon mobicon-links">
                   <i className="icon-links" />
                 </div>
@@ -55,7 +55,7 @@ const MeMobile = () => (
               </Link>
             </div>
             <div className="col-4 d-flex flex-column align-items-center">
-              <Link swipe duration={0.25} direction="left" rel="canonical" to="/artwork" className="d-flex flex-column align-items-center">
+              <Link swipe duration={0.25} direction="left" rel="canonical" to="/artwork/" className="d-flex flex-column align-items-center">
                 <div className="mobicon mobicon-artwork">
                   <i className="icon-art" />
                 </div>
@@ -63,7 +63,7 @@ const MeMobile = () => (
               </Link>
             </div>
             <div className="col-4 d-flex flex-column align-items-center pr-0">
-              <Link swipe duration={0.25} direction="left" rel="canonical" to="/photography" className="d-flex flex-column align-items-center">
+              <Link swipe duration={0.25} direction="left" rel="canonical" to="/photography/" className="d-flex flex-column align-items-center">
                 <div className="mobicon mobicon-photography">
                   <i className="icon-camera" />
                 </div>
