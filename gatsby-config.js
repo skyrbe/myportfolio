@@ -1,9 +1,10 @@
 module.exports = {
   siteMetadata: {
     title: `Harsha Venkatram`,
-    description: `Hey There! Welcome to my website. This is the personal portfolio of Harsha Venkatram - UX Geek | Front End Guy | Photographer | Artist. You will find most of designs and Open Source contribution here. Have fun!`,
+    description: `Hey There! Harsha Venkatram is a UX Geek with the heart of an artist. He also happens to be a front end architect, amateur photographer and artist. You will find most his designs and Open Source contribution here. Have fun!`,
     author: `Harsha Venkatram`,
-    siteUrl: `https://www.harsha.pro`
+    siteUrl: `https://www.harsha.pro`,
+    logo: `https://www.harsha.pro/logo.jpg`
   },
   plugins: [
     `gatsby-transformer-remark`,
