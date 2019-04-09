@@ -10,7 +10,6 @@ const IndexPage = (props) => {
   // console.log('props ', props);
   return (
     <>
-      <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
       <Finder sideMenu = {<Sidebar to="artwork"/>} mainContent = {<Artwork list={props.data.allMarkdownRemark.edges} />}/>
     </>
   )

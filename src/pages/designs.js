@@ -11,7 +11,6 @@ const IndexPage = (props) => {
   // console.log('props ', props);
   return (
     <>
-      <SEO title="Designs" keywords={[`Designs`, `UX`, `UI`, `Android`, `IOS`, `Native`, `Mobile`, `Web Application`]} description="This page lists some of the designs that I have worked on over the past 8+ years. I have worked on Android, IOS, Webapp designs. Photoshop and Sketch are the tools of my choice." />
       <Finder sideMenu = {<Sidebar to="designs"/>} mainContent = {<Designs list={props.data.allMarkdownRemark.edges} />}/>
     </>
   )

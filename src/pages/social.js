@@ -92,7 +92,6 @@ const IndexPage = (props) => {
   ]
   return (
     <>
-      <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
       <Finder sideMenu = {<Sidebar to="social"/>} mainContent = {<Social list={data} />}/>
     </>
   )
