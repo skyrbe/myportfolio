@@ -38,10 +38,12 @@ const MeMobile = () => (
               </Link>
             </div>
             <div className="col-4 d-flex flex-column align-items-center pr-0">
-              <div className="mobicon mobicon-experience">
-                <i className="icon-experience" />
-              </div>
-              <span className="mobicon-title">Experience</span>
+              <Link swipe duration={0.25} direction="left" rel="canonical" to="/experience/" className="d-flex flex-column align-items-center">
+                <div className="mobicon mobicon-experience">
+                  <i className="icon-experience" />
+                </div>
+                <span className="mobicon-title">Experience</span>
+              </Link>
             </div>
           </div>
 

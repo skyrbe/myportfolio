@@ -13,7 +13,7 @@ const Sidebar = (props) => {
           <li><Link rel="canonical" className={cn("menu-item", props.to === 'me' ? 'active' : '')} to="/">Harsha Venkatram</Link></li>
           <li><Link rel="canonical" className={cn("menu-item", props.to === 'code' ? 'active' : '')} to="/code/">Code</Link></li>
           <li><Link rel="canonical" className={cn("menu-item", props.to === 'designs' ? 'active' : '')} to="/designs/">Designs</Link></li>
-          <li><a className="menu-item" data-href="experience">Experience</a></li>
+          <li><Link rel="canonical" className={cn("menu-item", props.to === 'experience' ? 'active' : '')} to="/experience/">Experience</Link></li>
         </ul>
       </div>
       <div className="menu pl-2 mt-5">

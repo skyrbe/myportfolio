@@ -543,6 +543,10 @@ a:hover {
   float: right;
 }
 
+.experience-details h6 {
+  color: #8a49cc;
+}
+
 /* dark-theme ends */
 
 @media screen and (max-width: 768px) {
@@ -692,7 +696,8 @@ a:hover {
     font-size: 14px;
   }
 
-  .social-row {
+  .social-row,
+ .experience-row {
     display: flex;
   }
 }
