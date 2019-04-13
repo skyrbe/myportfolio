@@ -52,7 +52,7 @@ module.exports = {
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
-        display: `fullscreen`,
+        display: `standalone`,
         icon: `src/images/gatsby-icon.jpg`, // This path is relative to the root of the site.
       },
     },
