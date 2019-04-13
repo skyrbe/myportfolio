@@ -3,7 +3,7 @@ module.exports = {
     title: `Harsha Venkatram`,
     description: `Hey There! Harsha Venkatram is a UX Geek with the heart of an artist. He also happens to be a front end architect, amateur photographer and artist. You will find most his designs and Open Source contribution here. Have fun!`,
     author: `Harsha Venkatram`,
-    siteUrl: `https://www.harsha.pro`,
+    siteUrl: `https://www.harsha.pro/`,
     logo: `https://www.harsha.pro/logo.jpg`
   },
   plugins: [
@@ -12,7 +12,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
-        host: 'https://www.harsha.pro',
+        host: 'https://www.harsha.pro/',
         sitemap: 'https://www.harsha.pro/sitemap.xml',
         policy: [{ userAgent: '*', allow: '/' }]
       }
@@ -46,7 +46,7 @@ module.exports = {
         name: `harsha-venkatram`,
         description: `Hey There! Harsha Venkatram is a UX Geek with the heart of an artist. He also happens to be a front end architect, amateur photographer and artist. You will find most his designs and Open Source contribution here. Have fun!`,
         author: `Harsha Venkatram`,
-        siteUrl: `https://www.harsha.pro`,
+        siteUrl: `https://www.harsha.pro/`,
         logo: `https://www.harsha.pro/logo.jpg`,
         short_name: `HV`,
         start_url: `/`,
