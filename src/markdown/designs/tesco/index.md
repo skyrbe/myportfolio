@@ -1,5 +1,5 @@
 ---
-path: "/first-post"
+path: "https://drive.google.com/open?id=18aHn2C-BTFWeqlZMk6-XnO8uG9Y-Kd7k"
 date: "2018-07-24"
 title: "Tesco"
 tags: ['this', 'that']

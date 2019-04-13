@@ -1,7 +1,7 @@
 ---
-path: "/first-post"
+path: "https://drive.google.com/open?id=1nBj08fIi8p-0O4a__IADumLyX7_Af5cX"
 date: "2018-07-23"
-title: "Medical App"
+title: "Wealth Management"
 tags: ['this', 'that']
 excerpt: "A preview of my first post"
 section: "designs"
