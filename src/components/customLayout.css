@@ -697,7 +697,11 @@ a:hover {
   }
 
   .social-row,
- .experience-row {
+  .experience-row {
     display: flex;
+  }
+
+  .me-mobile-container {
+    color: inherit;
   }
 }

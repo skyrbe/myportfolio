@@ -35,3 +35,9 @@
     font-size: 1.5rem;
     line-height: 1;
 }
+
+@media screen and (max-width: 768px) {
+  .profile-details {
+    padding: 0;
+  }
+}

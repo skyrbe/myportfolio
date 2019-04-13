@@ -7,12 +7,12 @@ const Me = () => (
   <>
     <section id="profile" className="main-section active">
       <h1 className="mb-5 d-flex align-items-center">
-        <Link swipe duration={0.25} direction="right" rel="canonical" to="/me" className="icon-back d-block d-md-none mr-2 fs-16" />
+        <Link swipe duration={0.25} direction="right" rel="canonical" to="/" className="icon-back d-block d-md-none mr-2 fs-16" />
         Me
       </h1>
       <div className="social-container">
         <div className="social-row">
-          <div className="profile-pic-container">
+          <div className="profile-pic-container d-none d-md-block">
             <div className="profilecss" />
           </div>
           <div className="profile-details">
@@ -22,7 +22,7 @@ const Me = () => (
             </h3>
           </div>
         </div>
-        <div className="social-row other-details">
+        <div className="social-row other-details d-none d-md-block">
           <h3>
             <span>CSS Generated Image!</span>
           </h3>
