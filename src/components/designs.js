@@ -8,7 +8,7 @@ import DesignImage from './designImage';
 
 const ListItem = ({ item }) => {
   return (
-    <div className="gallery-item-wrapper" data-id="gubbi-details">
+    <a href={item.frontmatter.path} target="_blank" className="gallery-item-wrapper" data-id="gubbi-details">
       <div className="gallery-item">
         {item.frontmatter.cover_image.childImageSharp ? (
           <Img fluid={item.frontmatter.cover_image.childImageSharp.fluid} />
@@ -16,8 +16,10 @@ const ListItem = ({ item }) => {
           <img src={item.frontmatter.cover_image.publicURL} />
         )}
       </div>
-      <h3 className="details">{item.frontmatter.title}</h3>
-    </div>
+      <h3 className="details">
+        {item.frontmatter.title}
+      </h3>
+    </a>
   );
 }
 

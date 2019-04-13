@@ -1,6 +1,6 @@
 ---
-path: "/first-post"
-date: "2018-07-21"
+path: "https://drive.google.com/open?id=1Jg3pHDA-zkOGajN-icA7ZlhRAxLzteTh"
+date: "2018-07-22"
 title: "RMF"
 tags: ['this', 'that']
 excerpt: "A preview of my first post"

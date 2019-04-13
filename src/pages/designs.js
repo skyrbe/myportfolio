@@ -19,7 +19,8 @@ const IndexPage = (props) => {
 export const query = graphql`
   query DesignsQuery {
     allMarkdownRemark(
-      filter:{frontmatter:{section:{eq: "designs"}}}
+      filter: { frontmatter: { section: { eq: "designs" } } }
+      sort:{ fields: [frontmatter___date], order:ASC }
     ) {
       edges {
         node {

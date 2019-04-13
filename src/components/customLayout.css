@@ -1,4 +1,5 @@
-body, html {
+body,
+html {
   min-height: 100vh;
   margin: 0;
 }
@@ -10,7 +11,8 @@ body {
   background: transparent;
 }
 
-.preload, .postload {
+.preload,
+.postload {
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
@@ -75,18 +77,18 @@ body {
   float: right;
 }
 
-.gallery-item-wrapper:hover:before {
-  top:20px;
+.gallery-item-wrapper:hover::before {
+  top: 20px;
   transition: top ease 0.2s;
 }
 
-.gallery-item-wrapper:hover:after {
-  top:20px;
+.gallery-item-wrapper:hover::after {
+  top: 20px;
   transition: top ease 0.2s;
 }
 
 .gallery-item-wrapper:hover .gallery-item {
-  box-shadow: 0 0 40px rgba(0,0,0,0.15);
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.15);
   transition: box-shadow ease 0.2s;
 }
 
@@ -96,13 +98,13 @@ body {
   position: relative;
   overflow: hidden;
   height: 170px;
-  top:20px;
-  border: 1px solid #EEE;
+  top: 20px;
+  border: 1px solid #eee;
   z-index: 3;
   transition: box-shadow ease 0.2s;
 }
 
-.gallery-item-wrapper:before {
+.gallery-item-wrapper::before {
   content: '';
   width: calc(100% - 14px);
   position: absolute;
@@ -117,7 +119,7 @@ body {
   transition: top ease 0.2s;
 }
 
-.gallery-item-wrapper:after {
+.gallery-item-wrapper::after {
   content: '';
   width: calc(100% - 28px);
   position: absolute;
@@ -135,13 +137,17 @@ body {
 .gallery-item-wrapper .details {
   position: relative;
   top: 30px;
-  color: #444444;
+  color: #444;
   font-weight: 500;
   transition: color ease-in 0.2s;
   font-size: 1rem;
 }
 
-.gallery-item-wrapper .details:after {
+.gallery-item-wrapper:hover {
+  text-decoration: none;
+}
+
+.gallery-item-wrapper .details::after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -152,7 +158,7 @@ body {
   transition: width ease 0.2s;
 }
 
-.gallery-item-wrapper:hover .details:after{
+.gallery-item-wrapper:hover .details::after {
   width: 100%;
   transition: width ease 0.2s;
 }
@@ -170,9 +176,9 @@ body {
   width: calc(100vw - 40px);
   height: calc(100vh - 100px);
   position: relative;
-  background: #FFF;
+  background: #fff;
   left: 20px;
-  top: 0px;
+  top: 0;
 }
 
 .finder-details .finder-header {
@@ -190,7 +196,7 @@ body {
 
 .finder-details .finder-header h3 {
   position: relative;
-  color: #444444;
+  color: #444;
   font-weight: 500;
   font-size: 1rem;
   transition: color ease-in 0.2s;
@@ -227,6 +233,7 @@ body {
 .screen-design {
   width: 220px;
   position: relative;
+
   /* height: auto; */
   top: 20px;
   margin-left: 50px;
@@ -236,6 +243,7 @@ body {
 .screen-design-full {
   width: 100%;
   position: relative;
+
   /* height: auto; */
   top: 20px;
   margin-left: 50px;
@@ -258,20 +266,20 @@ body {
 }
 
 .photo-gallery-container iframe {
-  width:100% !important;
+  width: 100% !important;
   height: 280px !important;
 }
 
 .social-row {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 30px;
+  margin-bottom: 0;
 }
 
 .social-item {
   padding: 10px 15px;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   display: flex;
   width: 45%;
   flex-direction: column;
@@ -281,12 +289,12 @@ body {
 }
 
 .social-item:hover {
-  box-shadow: 0 0 40px rgba(0,0,0,0.1);
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
   transition: box-shadow ease 0.2s;
   cursor: pointer;
 }
 
-.social-item:before {
+.social-item::before {
   content: '';
   position: absolute;
   top: 0;
@@ -295,21 +303,22 @@ body {
   height: 100%;
 }
 
-.social-item.stack-overflow:before {
+.social-item.stack-overflow::before {
   background-color: orange;
 }
 
-.social-item.dribbble:before {
+.social-item.dribbble::before {
   background-color: #c51d60;
 }
 
-.social-item.fivehunderedpx:before {
+.social-item.fivehunderedpx::before {
   background-color: #0099e5;
 }
 
-.social-item.github:before {
+.social-item.github::before {
   background-color: #24292e;
 }
+
 .social-item h3 {
   font-size: 1rem;
   line-height: 1;
@@ -357,8 +366,8 @@ body {
 .photo-title {
   height: 50px;
   display: flex;
-  background-color: rgba(0,0,0,0.5);
-  color: #FFF;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
   bottom: 0;
   left: 0;
   align-items: center;
@@ -366,7 +375,8 @@ body {
   font-size: 0.9rem;
 }
 
-/*Theme begins */
+/* Theme begins */
+
 /* light-theme */
 .light-theme {
   height: 100vh;
@@ -380,24 +390,25 @@ body {
   background-image: url(/assets/images/bg.jpg);
 }
 
-.light-theme .dock-container:before {
+.light-theme .dock-container::before {
   /* box-shadow: inset 0 0 0 200px rgba(0,0,0,0.7); */
-  box-shadow: inset 0 0 0 200px rgba(255,255,255,0.1);
+  box-shadow: inset 0 0 0 200px rgba(255, 255, 255, 0.1);
 }
 
 .light-theme .finder {
-  background-color: #FFF;
-  box-shadow: 0 0 60px rgba(0,0,0,0.2);
+  background-color: #fff;
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.2);
 }
 
 .light-theme .finder .left-col {
-  box-shadow: -2px 0px 20px inset rgba(0,0,0,0.1);
+  box-shadow: -2px 0 20px inset rgba(0, 0, 0, 0.1);
 }
+
 /* light-theme ends */
 
 /* dark-theme */
-.dark-theme .dock-container:before {
-  box-shadow: inset 0 0 0 200px rgba(255,255,255,0.1);
+.dark-theme .dock-container::before {
+  box-shadow: inset 0 0 0 200px rgba(255, 255, 255, 0.1);
 }
 
 .dark-theme .finder {
@@ -405,7 +416,7 @@ body {
   overflow: hidden;
 }
 
-.dark-theme .finder:before {
+.dark-theme .finder::before {
   content: '';
   width: 1000px;
   height: 550px;
@@ -416,7 +427,7 @@ body {
   top: -25px;
   bottom: 0;
   filter: blur(10px);
-  box-shadow: inset 0 0 0 280px rgba(0,0,0,0.75);
+  box-shadow: inset 0 0 0 280px rgba(0, 0, 0, 0.75);
 }
 
 .dark-theme.preload {
@@ -427,17 +438,17 @@ body {
   background-image: url(/assets/images/bg_dark.jpg);
 }
 
-.dark-theme .finder .left-col:after {
+.dark-theme .finder .left-col::after {
   content: '';
   position: absolute;
   width: 1px;
   height: 350px;
   top: 75px;
   right: 0;
-  background: #FFFFFF16;
+  background: #ffffff16;
 }
 
-.dark-theme .finder .left-col:before {
+.dark-theme .finder .left-col::before {
   content: '';
   position: absolute;
   width: 1px;
@@ -448,7 +459,7 @@ body {
 }
 
 .dark-theme .menu-list li a.active {
-  background-color: rgba(255,255,255,0.1);
+  background-color: rgba(255, 255, 255, 0.1);
   transition: background-color ease-in 0.2s;
 }
 
@@ -457,13 +468,13 @@ body {
   transition: color ease-in 0.2s;
 }
 
-.dark-theme .gallery-item-wrapper:before {
-  background-color: #FFFFFF30;
+.dark-theme .gallery-item-wrapper::before {
+  background-color: #ffffff30;
   transition: background-color ease-in 0.2s;
 }
 
-.dark-theme .gallery-item-wrapper:after {
-  background-color: #FFFFFF30;
+.dark-theme .gallery-item-wrapper::after {
+  background-color: #ffffff30;
   transition: background-color ease-in 0.2s;
 }
 
@@ -472,7 +483,7 @@ body {
   transition: color ease-in 0.2s;
 }
 
-.dark-theme .finder-details:before {
+.dark-theme .finder-details::before {
   content: '';
   width: calc(80vw + 50px);
   height: calc(100vh - 100px);
@@ -483,7 +494,7 @@ body {
   top: -25px;
   bottom: 0;
   filter: blur(10px);
-  box-shadow: inset 0 0 0 500px rgba(0,0,0,0.75);
+  box-shadow: inset 0 0 0 500px rgba(0, 0, 0, 0.75);
 }
 
 .dark-theme .finder-details .finder-header h1 {
@@ -507,7 +518,7 @@ body {
 }
 
 .dark-theme .social-item {
-  background: rgba(255,255,255,0.1);
+  background: rgba(255, 255, 255, 0.1);
   transition: color ease-in 0.2s;
 }
 
@@ -527,6 +538,7 @@ body {
 .social-item:nth-child(even) {
   float: right;
 }
+
 /* dark-theme ends */
 
 @media screen and (max-width: 768px) {
@@ -550,9 +562,9 @@ body {
     -webkit-justify-content: center;
     justify-content: center;
     color: #444;
-    background: #FFF;
+    background: #fff;
     border-radius: 10px;
-    box-shadow: 0 0 160px rgba(0,0,0,0.5)
+    box-shadow: 0 0 160px rgba(0, 0, 0, 0.5);
   }
 
   .main-section-card .profile-pic-container {
@@ -584,95 +596,95 @@ body {
 
   .mobicon {
     width: 55px;
-    height:55px;
+    height: 55px;
     border-radius: 15px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.25);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
     display: flex;
     align-items: center;
     justify-content: center;
   }
 
   .mobicon-designs {
-    background: rgb(156,179,255); /* Old browsers */
-    background: -moz-linear-gradient(-45deg, rgba(156,179,255,1) 0%, rgba(176,255,233,1) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(-45deg, rgba(156,179,255,1) 0%,rgba(176,255,233,1) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(135deg, rgba(156,179,255,1) 0%,rgba(176,255,233,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9cb3ff', endColorstr='#b0ffe9',GradientType=1 );
+    background: rgb(156, 179, 255); /* Old browsers */
+    background: -moz-linear-gradient(-45deg, rgba(156, 179, 255, 1) 0%, rgba(176, 255, 233, 1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, rgba(156, 179, 255, 1) 0%, rgba(176, 255, 233, 1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, rgba(156, 179, 255, 1) 0%, rgba(176, 255, 233, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:dximagetransform.microsoft.gradient(startColorstr='#9cb3ff', endColorstr='#b0ffe9', GradientType=1);
   }
 
   .mobicon-designs i {
-    color: #4C82DE;
+    color: #4c82de;
     font-size: 1.8rem;
   }
 
   .mobicon-code {
-    background: rgb(231,209,255); /* Old browsers */
-    background: -moz-linear-gradient(-45deg, rgba(231,209,255,1) 0%, rgba(131,131,239,1) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(-45deg, rgba(231,209,255,1) 0%,rgba(131,131,239,1) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(135deg, rgba(231,209,255,1) 0%,rgba(131,131,239,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e7d1ff', endColorstr='#8383ef',GradientType=1 );
+    background: rgb(231, 209, 255); /* Old browsers */
+    background: -moz-linear-gradient(-45deg, rgba(231, 209, 255, 1) 0%, rgba(131, 131, 239, 1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, rgba(231, 209, 255, 1) 0%, rgba(131, 131, 239, 1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, rgba(231, 209, 255, 1) 0%, rgba(131, 131, 239, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:dximagetransform.microsoft.gradient(startColorstr='#e7d1ff', endColorstr='#8383ef', GradientType=1);
   }
 
   .mobicon-code i {
-    color: #7567DB;
+    color: #7567db;
     font-size: 1.4rem;
   }
 
   .mobicon-experience {
-    background: rgb(255,137,137); /* Old browsers */
-    background: -moz-linear-gradient(-45deg, rgba(255,137,137,1) 0%, rgba(255,221,197,1) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(-45deg, rgba(255,137,137,1) 0%,rgba(255,221,197,1) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(135deg, rgba(255,137,137,1) 0%,rgba(255,221,197,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff8989', endColorstr='#ffddc5',GradientType=1 );
+    background: rgb(255, 137, 137); /* Old browsers */
+    background: -moz-linear-gradient(-45deg, rgba(255, 137, 137, 1) 0%, rgba(255, 221, 197, 1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, rgba(255, 137, 137, 1) 0%, rgba(255, 221, 197, 1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, rgba(255, 137, 137, 1) 0%, rgba(255, 221, 197, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ff8989', endColorstr='#ffddc5', GradientType=1);
   }
 
   .mobicon-experience i {
-    color: #E86A63;
+    color: #e86a63;
     font-size: 1.8rem;
   }
 
   .mobicon-links {
-    background: rgb(255,168,232); /* Old browsers */
-    background: -moz-linear-gradient(-45deg, rgba(255,168,232,1) 0%, rgba(255,230,230,1) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(-45deg, rgba(255,168,232,1) 0%,rgba(255,230,230,1) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(135deg, rgba(255,168,232,1) 0%,rgba(255,230,230,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffa8e8', endColorstr='#ffe6e6',GradientType=1 );
+    background: rgb(255, 168, 232); /* Old browsers */
+    background: -moz-linear-gradient(-45deg, rgba(255, 168, 232, 1) 0%, rgba(255, 230, 230, 1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, rgba(255, 168, 232, 1) 0%, rgba(255, 230, 230, 1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, rgba(255, 168, 232, 1) 0%, rgba(255, 230, 230, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ffa8e8', endColorstr='#ffe6e6', GradientType=1);
   }
 
   .mobicon-links i {
-    color: #E778C1;
+    color: #e778c1;
     font-size: 1.7rem;
   }
 
   .mobicon-artwork {
-    background: rgb(255,175,115); /* Old browsers */
-    background: -moz-linear-gradient(-45deg, rgba(255,175,115,1) 0%, rgba(255,254,204,1) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(-45deg, rgba(255,175,115,1) 0%,rgba(255,254,204,1) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(135deg, rgba(255,175,115,1) 0%,rgba(255,254,204,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffaf73', endColorstr='#fffecc',GradientType=1 );
+    background: rgb(255, 175, 115); /* Old browsers */
+    background: -moz-linear-gradient(-45deg, rgba(255, 175, 115, 1) 0%, rgba(255, 254, 204, 1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, rgba(255, 175, 115, 1) 0%, rgba(255, 254, 204, 1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, rgba(255, 175, 115, 1) 0%, rgba(255, 254, 204, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ffaf73', endColorstr='#fffecc', GradientType=1);
   }
 
   .mobicon-artwork i {
-    color: #FF9147;
+    color: #ff9147;
     font-size: 1.7rem;
   }
 
   .mobicon-photography {
-    background: rgb(89,219,176); /* Old browsers */
-    background: -moz-linear-gradient(-45deg, rgba(89,219,176,1) 0%, rgba(254,255,181,1) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(-45deg, rgba(89,219,176,1) 0%,rgba(254,255,181,1) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(135deg, rgba(89,219,176,1) 0%,rgba(254,255,181,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#59dbb0', endColorstr='#feffb5',GradientType=1 );
+    background: rgb(89, 219, 176); /* Old browsers */
+    background: -moz-linear-gradient(-45deg, rgba(89, 219, 176, 1) 0%, rgba(254, 255, 181, 1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, rgba(89, 219, 176, 1) 0%, rgba(254, 255, 181, 1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, rgba(89, 219, 176, 1) 0%, rgba(254, 255, 181, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:dximagetransform.microsoft.gradient(startColorstr='#59dbb0', endColorstr='#feffb5', GradientType=1);
   }
 
   .mobicon-photography i {
-    color: #47BF82;
+    color: #47bf82;
     font-size: 1.4rem;
   }
 
   .mobicon-title {
-    color: #FFF;
-    text-shadow: 0 0 5px rgba(0,0,0,0.5);
+    color: #fff;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
     font-size: 14px;
   }
 

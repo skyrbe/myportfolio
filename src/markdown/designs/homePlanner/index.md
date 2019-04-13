@@ -1,5 +1,5 @@
 ---
-path: "/first-post"
+path: "https://drive.google.com/open?id=1Eyj1mVqP83xHcKrsOnrhYQuliLGcO7fi"
 date: "2018-07-21"
 title: "Home Planner"
 tags: ['this', 'that']
