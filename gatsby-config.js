@@ -50,9 +50,9 @@ module.exports = {
         logo: `https://www.harsha.pro/logo.jpg`,
         short_name: `HV`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
-        display: `standalone`,
+        background_color: `#00b5ff`,
+        theme_color: `#00b5ff`,
+        display: `minimal-ui`,
         icon: `src/images/gatsby-icon.jpg`, // This path is relative to the root of the site.
       },
     },
