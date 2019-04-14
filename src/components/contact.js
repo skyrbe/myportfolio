@@ -18,6 +18,7 @@ const Me = () => (
             data-netlify="true"
             data-netlify-honeypot="bot-field"
           >
+            <input type="hidden" name="form-name" value="contact" />
             <input name="name" placeholder="Your Name" type="text" />
             <button>Send</button>
           </form>
