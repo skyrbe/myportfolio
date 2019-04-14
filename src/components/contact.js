@@ -1,8 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
 import Layout from "../layouts"
-import SEO from "../components/seo"
-import './profilePic.css';
 const Me = () => (
   <>
     <section id="profile" className="main-section">
@@ -15,6 +13,7 @@ const Me = () => (
           <form
             name="contact"
             method="post"
+            netlify
             data-netlify="true"
             data-netlify-honeypot="bot-field"
           >
