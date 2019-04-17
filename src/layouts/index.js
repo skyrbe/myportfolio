@@ -69,7 +69,7 @@ const Layout = ({ children, location }) => {
                   <div className="bg-container d-block d-md-none">
                     <ImageLightThemeMobile />
                   </div>
-                  <Toolbar siteTitle={data.site.siteMetadata.title} changeTheme={changeTheme} />
+                  <Toolbar siteTitle={data.site.siteMetadata.title} changeTheme={changeTheme} theme={theme}/>
                   <div>
                     <main>
                       <Transition location={location}>{children}</Transition>
