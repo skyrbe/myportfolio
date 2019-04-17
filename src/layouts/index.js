@@ -13,6 +13,7 @@ import Header from "../components/header"
 import Toolbar from "../components/Toolbar";
 import Footer from '../components/Footer';
 import ImageLightTheme from "../components/preloadImageFull";
+import ImageDarkTheme from "../components/preloadImageFullDark";
 import ImageLightThemeMobile from "../components/preloadImageFullMobile";
 import Transition from '../components/transition';
 import "../assets/fonts/CircularStd/style.css";
@@ -24,12 +25,17 @@ import SEO from '../components/seo';
 
 const Layout = ({ children, location }) => {
   const [state, setState] = useState(false);
+  const [theme, setTheme] = useState('light-theme');
   useEffect(() => {
     // Update the document title using the browser API
     window.setTimeout(() => {
       setState(true);
     }, 100);
   });
+
+  const changeTheme = () => {
+    setTheme(theme === 'light-theme' ? 'dark-theme' : 'light-theme');
+  }
   return (
     <StaticQuery
       query={graphql`
@@ -53,16 +59,17 @@ const Layout = ({ children, location }) => {
         return (
           <>
             <SEO description={description}/>
-            <div className="light-theme">
+            <div className={theme}>
               {state && (
                 <>
                   <div className="bg-container d-none d-md-block">
-                    <ImageLightTheme />
+                    {theme === 'light-theme' && <ImageLightTheme />}
+                    {theme === 'dark-theme' && <ImageDarkTheme />}
                   </div>
                   <div className="bg-container d-block d-md-none">
                     <ImageLightThemeMobile />
                   </div>
-                  <Toolbar siteTitle={data.site.siteMetadata.title} />
+                  <Toolbar siteTitle={data.site.siteMetadata.title} changeTheme={changeTheme} />
                   <div>
                     <main>
                       <Transition location={location}>{children}</Transition>

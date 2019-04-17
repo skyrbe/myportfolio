@@ -526,6 +526,14 @@ a:hover {
   transition: color ease-in 0.2s;
 }
 
+.dark-theme .experience-details {
+  color: #9e9e9e;
+}
+
+.dark-theme .experience-item h5 {
+  color: #e2e2e2;
+}
+
 .social-row {
   display: block;
   float: left;
