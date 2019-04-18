@@ -33,7 +33,7 @@ const Me = () => (
         <div className="social-row">
           <div className="profile-details p-0">
             <h3>
-              Interested in talking? You can get in touch with <a target="_blank" href="mailto:hasha.venkatram@gmail.com">me</a> or you visit my <Link to="/social">Social Links</Link>
+              Interested in talking? You can get in touch with <a target="_blank" href="mailto:harsha.venkatram@gmail.com">me</a> or you visit my <Link to="/social">Social Links</Link>
             </h3>
           </div>
         </div>
