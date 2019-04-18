@@ -379,6 +379,10 @@ a:hover {
   font-size: 0.9rem;
 }
 
+.fade-image {
+  transition: opacity ease 0.3s;
+}
+
 /* Theme begins */
 
 /* light-theme */

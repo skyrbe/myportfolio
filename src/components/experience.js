@@ -30,7 +30,7 @@ const Me = () => (
                 Libaries and Technologies
               </h6>
               <span className="mt-2 fs-14 text-left">
-                JQuery, React, Redux, Redux-Thunk, Webpack, Grunt, PWA, SSR
+                JQuery, React, React Native, Redux, Redux-Thunk, Webpack, Grunt, PWA, SSR
               </span>
             </div>
           </div>
