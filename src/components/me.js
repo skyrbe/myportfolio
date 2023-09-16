@@ -18,7 +18,7 @@ const Me = () => (
           <div className="profile-details">
             <h2>Hi, I am Harsha. Nice to meet you.</h2>
             <h3>
-              Since beginning my journey as a full time front end dev | UI/UX designer over 8 years ago, I have worked with talented people across different verticals to design and code digital products for both business and consumer use. I am confident, curious, and continuously working on improving my skills, one problem at a time.
+              Since beginning my journey as a full time front end dev | UI/UX designer over 13 years ago, I have worked with talented people across different verticals to design and code digital products for both business and consumer use. I am confident, curious, and continuously working on improving my skills, one problem at a time.
             </h3>
           </div>
         </div>
